@@ -1,0 +1,282 @@
+.headerExtraIcon {
+  cursor: pointer;
+  position: absolute;
+  top: 1.3125rem;
+  right: 5.3125rem;
+
+  svg {
+    width: 2rem;
+  }
+}
+
+.flexTraderProfile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.9375rem;
+  position: relative;
+  border-radius: 0.3125rem;
+  box-shadow: 0rem 0.125rem 0rem 0.125rem rgba(0, 0, 0, 0.05),
+    0rem 0.0625rem 0rem 0.0625rem inset rgba(39, 162, 255, 0.05);
+
+  .trader {
+    .traderHead {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    p.traderBottom {
+      font-size: 0.7rem;
+      font-weight: 500;
+      margin-top: 0.35rem;
+      span.id {
+        color: #9cb0c2;
+      }
+      span.id-number {
+        color: #0094ff;
+        margin-left: 0.2rem;
+      }
+    }
+  }
+  .reloadIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.traderInfoImages {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0rem 0.25rem 0.3125rem 0rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+.traderInfoImages-new {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  .card {
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    position: relative;
+    display: flex !important;
+    width: 90% !important;
+    height: 5.875rem !important;
+    flex-direction: column;
+    gap: 0.5rem;
+    &.backgroundPurple {
+      background: linear-gradient(rgba(108, 0, 135, 0.4), rgba(85, 6, 105, 0));
+    }
+    &.backgroundGreen {
+      background: linear-gradient(rgba(24, 193, 115, 0.4), rgba(85, 6, 105, 0));
+    }
+    &.backgroundBlack {
+      background: linear-gradient(rgba(0, 0, 0, 1), rgba(85, 6, 105, 0));
+    }
+    &.backgroundSky {
+      background: linear-gradient(
+        rgba(39, 162, 255, 0.26),
+        rgba(85, 6, 105, 0)
+      );
+    }
+    .image {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      width: fit-content;
+      height: fit-content;
+    }
+    .text {
+      position: absolute;
+      bottom: 0.5rem;
+      .textp {
+        font-weight: 500;
+        font-size: 0.596rem;
+        color: #ffffff;
+      }
+    }
+  }
+  p {
+    color: #ffffff;
+    font-size: 0.896rem;
+    font-weight: 600;
+  }
+}
+
+.profileCard {
+  cursor: pointer;
+  height: 100%;
+  padding: 0.125rem 0.9375rem;
+  position: relative;
+  border-radius: 0.3125rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.12),
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: 0rem 0.125rem 0rem 0.125rem rgba(0, 0, 0, 0.05),
+    0rem 0.0625rem 0rem 0.0625rem inset rgba(255, 255, 255, 0.26);
+}
+
+.profileCard-set {
+  cursor: pointer;
+  height: 100%;
+  padding: 0.125rem 0.6375rem;
+  position: relative;
+  border-radius: 0.3125rem;
+  box-shadow: 0rem 0.125rem 0rem 0.125rem rgba(0, 0, 0, 0.05),
+    0rem 0.0625rem 0rem 0.0625rem inset rgba(39, 162, 255, 0.26);
+  display: flex;
+  align-items: center;
+}
+
+.levelCard {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 0.4125rem;
+  align-items: center;
+  gap: 1rem;
+  .levelCardTitleContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3375rem;
+
+    .levelCardTitle {
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-left: 0.3375rem;
+      margin-right: 0.5rem;
+      @media (max-width: 576px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .levelBar {
+    width: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(39, 162, 255, 1),
+      rgba(0, 148, 255, 0)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    border-radius: 0.625rem;
+    padding: 0.125rem 0.5rem;
+    height: 1rem;
+    @media (max-width: 307px) {
+      justify-content: start;
+      width: 80%;
+    }
+    p {
+      font-size: 0.6rem;
+      @media (max-width: 307px) {
+        font-size: 0.4rem;
+      }
+    }
+    .levelText {
+      font-size: 0.7rem;
+      margin-left: 2rem;
+      @media (max-width: 307px) {
+        font-size: 0.4rem;
+      }
+    }
+  }
+}
+
+.statusTooltip {
+  margin-top: 0.9375rem;
+  display: flex;
+  justify-content: end;
+  color: #ffffff80;
+  font-size: 0.75rem;
+  margin-bottom: 1.25rem;
+  .statusTooltipInner {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    cursor: pointer;
+    p {
+      margin-right: 0.3125rem;
+    }
+  }
+}
+
+.taskCards {
+  .taskCard {
+    padding: 0.325rem 0;
+
+    .taskCardIcon {
+      margin-bottom: 0.3125rem;
+    }
+
+    .taskCardSubtitle {
+      color: #5d86a6;
+      font-size: 0.875rem;
+      margin-bottom: 0.3125rem;
+      min-height: 1.0625rem;
+    }
+    .taskCardTitle {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 0.3125rem;
+    }
+  }
+}
+
+// .flexProfileLinks {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-top: 4.3rem;
+//   .profileLinkContainer {
+//     height: 7rem;
+//     border-radius: 1.25rem;
+//     background: #1a1d21;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     padding: 1rem;
+//     cursor: pointer;
+//   }
+//   p.linkName {
+//     color: #fff;
+//     font-size: 1.125rem;
+//   }
+// }
+
+.settingsButton {
+  margin-top: 7rem;
+  cursor: pointer;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    left: 0%;
+    bottom: -60%;
+    svg {
+      width: 1.5rem;
+    }
+  }
+  button.settings {
+    margin: 0.625rem 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.25rem;
+    background: transparent;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+  }
+}
